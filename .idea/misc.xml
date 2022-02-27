@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/add.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/borders.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/buttons.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/entertainment.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/home.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/house.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/other.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/person.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/personalcare.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/drawable-v24/settings.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_account.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_budget.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_choose_analytic.xml" value="0.15625" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_daily_analytics.xml" value="0.18170805572380375" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_history.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_month_spending.xml" value="0.17" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_monthly_analytics.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_registration.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_splashscreen.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_today_spending.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_week_spending.xml" value="0.15625" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/activity_weekly_analytics.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/background.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/input_layout.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/input_layout2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/retrieve_layout.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/layout/update_layout.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MoneyManagerApp/app/src/main/res/menu/menu.xml" value="0.15625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
