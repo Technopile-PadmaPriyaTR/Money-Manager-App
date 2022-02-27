@@ -26,7 +26,6 @@ public class WeekSpendingAdapter extends RecyclerView.Adapter<WeekSpendingAdapte
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(mContext).inflate(R.layout.retrieve_layout, parent,false);
         return new WeekSpendingAdapter.ViewHolder(view);
-
     }
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
