@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -103,16 +104,18 @@ public class HistoryActivity extends AppCompatActivity implements DatePickerDial
     }
     @Override
     public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
+
         int months = month+1;
-        String date = dayOfMonth+"-"+"0"+months +"-"+year;
+        String date = "0"+dayOfMonth+"-"+"0"+months +"-"+year;
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("expenses").child(onlineUserId);
         Query query = reference.orderByChild("date").equalTo(date);
         query.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 myDataList.clear();
-                for (DataSnapshot snapshot :dataSnapshot.getChildren()){
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Data data = snapshot.getValue(Data.class);
                     myDataList.add(data);
                 }
@@ -120,17 +123,26 @@ public class HistoryActivity extends AppCompatActivity implements DatePickerDial
                 recyclerView.setVisibility(View.VISIBLE);
 
                 int totalAmount = 0;
-                for (DataSnapshot ds :  dataSnapshot.getChildren()){
-                    Map<String, Object> map = (Map<String, Object>)ds.getValue();
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                    Map<String, Object> map = (Map<String, Object>) ds.getValue();
                     Object total = map.get("amount");
                     int pTotal = Integer.parseInt(String.valueOf(total));
-                    totalAmount+=pTotal;
-                    if(totalAmount>0) {
+                    totalAmount += pTotal;
+                    if (totalAmount > 0) {
                         historyTotalAmountSpent.setVisibility(View.VISIBLE);
                         historyTotalAmountSpent.setText("This day you spent : Rs. " + totalAmount);
                     }
+
+
                 }
+                if (totalAmount == 0) {
+                    historyTotalAmountSpent.setVisibility(View.VISIBLE);
+                    historyTotalAmountSpent.setText("This day you spent : Rs. " + 0);
+                    Toast.makeText(HistoryActivity.this, "No Expense", Toast.LENGTH_SHORT).show();
+                }
+
             }
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {

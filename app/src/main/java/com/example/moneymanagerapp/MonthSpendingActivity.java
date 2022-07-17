@@ -107,7 +107,7 @@ public class MonthSpendingActivity extends AppCompatActivity {
         Months months = Months.monthsBetween(epoch, now);
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("expenses").child(onlineUserId);
-        Query query = reference.orderByChild("week").equalTo(months.getMonths());
+        Query query = reference.orderByChild("month").equalTo(months.getMonths());
         query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -149,10 +149,10 @@ public class MonthSpendingActivity extends AppCompatActivity {
         MutableDateTime epoch = new MutableDateTime();
         epoch.setDate(0);
         DateTime now = new DateTime();
-        Weeks weeks = Weeks.weeksBetween(epoch, now);
+        Months months = Months.monthsBetween(epoch, now);
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("expenses").child(onlineUserId);
-        Query query = reference.orderByChild("week").equalTo(weeks.getWeeks());
+        Query query = reference.orderByChild("month").equalTo(months.getMonths());
         query.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

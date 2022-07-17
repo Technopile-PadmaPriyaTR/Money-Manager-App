@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
                 startActivity(intent);
             }
-        });
+       });
 
 
         budgetRef.addValueEventListener(new ValueEventListener() {
